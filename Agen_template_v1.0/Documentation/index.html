@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<title>Agen | Documentation</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		
+		<!-- Stylesheets -->
+		<link href="css/main.css" rel="stylesheet" media="screen">
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic,900' rel='stylesheet' type='text/css'>
+		<link href="css/styles.css" rel="stylesheet" media="screen">
+		<link href="css/highlight.css" rel="stylesheet" media="screen">
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="js/respond.min.js"></script>
+		<![endif]-->
+		
+	</head>
+	
+	<body data-spy="scroll" data-target="#sidenav" data-offset="200">
+		<div id="top" class="jumbotron">
+			<div class="container text-center">
+				<h1>Agen</h1>
+				<p>One-Page Portfolio Template / Bootstrap Template</p>
+				<br/>
+				<p><a class="btn btn-success btn-lg" href="http://demos.q-themes.net/agen" target="_blank">View Online Demo</a><br/><small>Version 1.0</small></p>
+			</div>
+		</div>
+		<div class="container">
+
+			<div class="row">
+				
+				<div id="sidebar" class="col-md-3">
+				
+					<div class="panel panel-success">
+						<div class="panel-heading">
+							<h3 class="panel-title">Skip to section</h3>
+						</div>
+						<div id="sidenav" class="panel-body">
+							<ul class="list-unstyled nav sidenav">
+								<li><a href="#portfolio">Portfolio</a></li>
+								<li><a href="#backgrounds">Backgrounds</a></li>
+								<li><a href="#contact">Contact Form</a></li>
+								<li><a href="#newsletter">Newsletter</a></li>
+								<li><a href="#gmap">Google Map</a></li>
+								<hr>
+								<li><a href="#colors">Theme colors</a></li>
+								<hr>
+								<li><a href="#changelog">Change Log</a></li>
+								<li><a href="#credits">Credits</a></li>
+							</ul>
+						</div>
+					</div>
+				
+				</div>
+				
+				<div class="col-md-9">
+				
+					<div id="portfolio" class="panel panel-success">
+						<div class="panel-heading">
+							<h3 class="panel-title">Portfolio</h3>
+						</div>
+						<div class="panel-body">
+							<h3>Project Filters<br></h3><br><pre><code class="hljs xml"><span class="hljs-comment">&lt;!--==== Portfolio Filters ====--&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"filter-works"</span>&gt;</span><br>	<span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span><br>		<span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"active"</span>&gt;</span><br>			<span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">data-filter</span>=<span class="hljs-value">"*"</span>&gt;</span>All<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><br>		<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span><br>		<span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><br>			<span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">data-filter</span>=<span class="hljs-value">".identity"</span>&gt;</span>Identity<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><br>		<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span><br>		<span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><br>			<span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">data-filter</span>=<span class="hljs-value">".logo"</span>&gt;</span>Logo<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><br>		<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span><br>		<span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><br>			<span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">data-filter</span>=<span class="hljs-value">".illustration"</span>&gt;</span>Illustration<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><br>		<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span><br>	<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-comment">&lt;!--End portfolio filters --&gt;</span><br><br></code></pre><br><ol>
+								<li>
+									<p>Change the text of <code>&lt;a&gt;</code> anchors to match your own categories. Delete or add more to have as many as you need. Leave the class <code>active</code> to the first list item, as when the window loads all projects will be visible.</p></li><li>Change the value of the <code>data-filter=""</code> attribute to match the categories you entered above. DO NOT forget the dot <code>(.)</code>, cause these data will be used as classes next</li></ol>
+							<br>
+							<p class="text-info">Note: If for some reason you don't want to have the filtering effect, but you want to always show all of your projects, just delete the entire <code>div#filter-works</code>.</p>
+							<hr>
+							<h3>Single Projects</h3>
+							<p>After the <strong>Portfolio Filters</strong> section you see the <strong>SINGLE PROJECT ITEM</strong> section. As you can see the markup consists of two parts:</p>
+							<p><strong>The Main markup.</strong> This is what is being seen initially. An article with the project thumb and a hover mask with the project title and some text. <br></p><pre><code class="hljs xml"><span class="hljs-comment">&lt;!-- ==============================================</span><br><span class="hljs-comment">SINGLE PROJECT ITEM</span><br><span class="hljs-comment">=============================================== --&gt;</span>	<br><span class="hljs-tag">&lt;<span class="hljs-title">article</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"project-item illustration"</span>&gt;</span><br>	<br>	<span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"img-responsive project-image"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"assets/images/projects/project-1.jpg"</span>  <span class="hljs-attribute">alt</span>=<span class="hljs-value">""</span>&gt;</span><span class="hljs-comment">&lt;!--Project thumb --&gt;</span><br>	<br>	<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"hover-mask"</span>&gt;</span><br>		<span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"project-title"</span>&gt;</span>Noisy Water Logo<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span><span class="hljs-comment">&lt;!--Project Title --&gt;</span><br>		<span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>#illustrations, #logos<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><span class="hljs-comment">&lt;!--Project Subtitle --&gt;</span><br>		<span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"fa fa-arrow-right"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span><br>	<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>	<br>	<span class="hljs-comment">&lt;!--==== Project Preview HTML ====--&gt;</span><br>	<br>	<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sr-only project-description"</span> <span class="hljs-attribute">data-images</span>=<span class="hljs-value">"assets/images/slide-1.png,assets/images/slide-2.png,assets/images/slide-3.png"</span>&gt;</span><br>	<br>		<span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><br>		<br>		<span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Phasellus porta eros vel lacus euismod consequat. Phasellus eleifend, nibh non feugiat hendrerit, lacus enim adipiscing eros, a pharetra erat neque eget est. Quisque vitae aliquet urna. Integer suscipit lectus eu enim porttitor fringilla. Ut blandit, urna in auctor euismod, arcu eros pharetra metus, a porta purus libero a nibh.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><br>		<span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Nam eget urna pellentesque nisl ultrices dapibus. Mauris accumsan vehicula nisl, sed tempus mauris facilisis eu. Donec a iaculis nisi, quis malesuada justo. Pellentesque ut enim sit amet ipsum dignissim egestas. Morbi tincidunt rhoncus urna eget placerat.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><br>		<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"text-right"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#external-link"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"fa fa-arrow-right"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>Visit Website<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><br>	<br>	<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>	<br><span class="hljs-tag">&lt;/<span class="hljs-title">article</span>&gt;</span><br><span class="hljs-comment">&lt;!-- ==============================================</span><br><span class="hljs-comment">END PROJECT ITEM</span><br><span class="hljs-comment">=============================================== --&gt;</span>						<br><br></code></pre><p>
+							</p><ol>
+								<li>
+									<p><strong>Category Classes:</strong> Apply the suitable category class(es) to each project from those in filters, for the project to belong in one (or more) category. DO NOT delete the <code>project-item</code> class.</p>
+								</li>
+								<li>
+									<p><strong>Project Thumb:</strong> Provide the path to the project thumb in the <code>src</code> attribute of the <code>img</code> tag. Don't alter it's classes.</p>
+								</li>
+								<li>
+									<p><strong>Project Title:</strong> Within the <strong>hover-mask</strong> div, change the text of the project title. Do the same for the subtitle, show something like the client or a small description. <strong>Project subtitle is optional, but Title is not as this is going to be used in the Project Preview as well.</strong></p>
+								</li>
+							</ol>
+							<br>
+							<p><strong>The Project Preview markup.</strong> This is what is going to be shown in the Project Preview window. You are free to alter this markup as you like, leaving just the classes <code>sr-only</code> and <code>project-description</code> as is.</p><p><br></p><pre><code class="hljs xml"><span class="hljs-comment">&lt;!--==== Project Preview HTML ====--&gt;</span><br><br><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sr-only project-description"</span> <span class="hljs-attribute">data-images</span>=<span class="hljs-value">"assets/images/slide-1.png,assets/images/slide-2.png,assets/images/slide-3.png"</span>&gt;</span><br><br>	<span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><br>	<br>	<span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Phasellus porta eros vel lacus euismod consequat. Phasellus eleifend, nibh non feugiat hendrerit, lacus enim adipiscing eros, a pharetra erat neque eget est. Quisque vitae aliquet urna. Integer suscipit lectus eu enim porttitor fringilla. Ut blandit, urna in auctor euismod, arcu eros pharetra metus, a porta purus libero a nibh.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><br>	<span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Nam eget urna pellentesque nisl ultrices dapibus. Mauris accumsan vehicula nisl, sed tempus mauris facilisis eu. Donec a iaculis nisi, quis malesuada justo. Pellentesque ut enim sit amet ipsum dignissim egestas. Morbi tincidunt rhoncus urna eget placerat.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><br>	<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"text-right"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#external-link"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"fa fa-arrow-right"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>Visit Website<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><br><br><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br></code></pre><ol>
+								<li>
+									<p><strong>Project Slider: </strong> In the <code>data-images</code>  attribute, provide the path(s) to the project slide(s) you want to show in the Project Preview slider. These images are going to be loaded only when the user clicks on the Project thumb to save bandwidth.</p>
+								</li>
+								<li>
+									<p><strong>Project Preview:</strong> Provide the markup of your choise for the Project Preview. The only ones that going to be auto-generated are the Slider and the Title.</p>
+								</li>
+								<li>
+									<p><strong>Project Video:</strong> In the <code>data-video</code>  attribute, provide the embed code of the Youtube or Vimeo video as follows:</p>
+								</li>
+							</ol><br><pre><code class="hljs xml">data-video='<span class="hljs-tag">&lt;<span class="hljs-title">iframe</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">"854"</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">"480"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"https://www.youtube.com/embed/rdxnBrYLrVo"</span> <span class="hljs-attribute">frameborder</span>=<span class="hljs-value">"0"</span> <span class="hljs-attribute">allowfullscreen</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">iframe</span>&gt;</span>'<br></code></pre><br>
+							
+							<hr>
+							<h3>Project Preview Screen</h3>
+							<p>Right after the <strong>Portfolio Filters</strong> section you see the markup for the <strong>Project Preview</strong>&nbsp; screen.<br></p><p><br></p><pre><code class="hljs xml"><span class="hljs-comment">&lt;!--==== Project Preview ====--&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"project-preview"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gray-bg"</span>&gt;</span><br><br>	<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"container"</span>&gt;</span><br>		<br>		<span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"close-preview"</span>&gt;</span>&amp;times;<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><br>	<br>		<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"row"</span>&gt;</span><br>		<br>			<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-md-10 col-md-offset-1 text-left"</span>&gt;</span><br>			<br>				<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"project-slider"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"flexslider"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>				<br>				<span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"project-title"</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span><br>				<br>				<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"project-content"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"text-left"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>				<br>			<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>		<br>		<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>		<br>	<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>	<br><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-comment">&lt;!--Project Preview --&gt;</span><br><br></code></pre><p><br></p><p><strong>DO NOT alter this markup at all.</strong> This is the necessary markup for the Project Preview window. It's empty and it fills with the content provided above for every single project, every time the user clicks on the project thumb. </p>
+						</div>
+					</div>
+					
+					<div id="backgrounds" class="panel panel-success">
+						<div class="panel-heading">
+							<h3 class="panel-title">Backgrounds</h3>
+						</div>
+						<div class="panel-body">
+							<h3>Parallax Backgrounds<br></h3><p>To give a section the <strong>Parallax</strong> effect use the following markup:</p><pre><code class="hljs javascript">&lt;section <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"parallax-bg light-typo padding-top-bottom overlay-color"</span> data-parallax=<span class="hljs-string">"scroll"</span> data-image-src=<span class="hljs-string">"assets/images/about.jpg"</span>&gt;<br></code></pre>
+						<br>
+						<ol>
+							<li>Add class <code>parallax-bg</code></li>
+							<li>Provide the path to the background image in the <code>data-image-src</code> attribute.</li>
+							<li>Optionally add class <code>overlay-color</code> or <code>overlay-dark</code> to apply an overlay to your background image.</li></ol><p><br></p><h3>Video Backgrounds</h3><p>Video backgrounds use HTML5 video technology and videos are loaded asynchronously, to make page load faster. <br></p><pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"testimonials"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"bg-video light-typo padding-top-bottom"</span>&gt;</span><br><br>	...<span class="hljs-tag"></span><br>	<br>	<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"video-bg-wrapper"</span>&gt;</span><br>		<span class="hljs-tag">&lt;<span class="hljs-title">video</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"video-bg"</span> <span class="hljs-attribute">data-video</span>=<span class="hljs-value">"assets/videos/testimonials.mp4"</span> <span class="hljs-attribute">autoplay</span>=<span class="hljs-value">""</span> <span class="hljs-attribute">muted</span>=<span class="hljs-value">""</span> <span class="hljs-attribute">loop</span>=<span class="hljs-value">""</span> <span class="hljs-attribute">poster</span>=<span class="hljs-value">"assets/images/about.jpg"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"background-image:url(assets/images/about.jpg);"</span>&gt;</span><br>		<span class="hljs-tag">&lt;/<span class="hljs-title">video</span>&gt;</span><br>	<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br><br><span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span><br>	</code></pre><ol><li>First add class <code>bg-video</code>&nbsp; to the section you want to apply the background video.</li><li>Add the <code>video-bg-wrapper</code>&nbsp; markup as seen above.</li><li>Provide the path of your video in the <code>data-video</code> attribute. Note that even though you give the path for the mp4 version of your video, you should save your video in 3 different formats: <strong>mp4, webm </strong>and <strong>ogv</strong>.&nbsp; You just save all 3 formats with the same name and our script will load them when needed.</li><li>Provide a nice background image for the devices that don't support HTML5 video.<br></li></ol><p><br></p><ol>
+						</ol>
+						</div>
+					</div>
+					
+					<div id="contact" class="panel panel-success">
+						<div class="panel-heading">
+							<h3 class="panel-title">Contact Form</h3>
+						</div>
+						<div class="panel-body">
+							<p><br></p>
+							<pre><code class="hljs xml"><span class="hljs-comment">&lt;!--=== Contact Form ===--&gt;</span><br><br><span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"contact-form"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-8 col-lg-7 col-lg-offset-1"</span> <span class="hljs-attribute">action</span>=<span class="hljs-value">"contact.php"</span> <span class="hljs-attribute">method</span>=<span class="hljs-value">"post"</span> <span class="hljs-attribute">novalidate</span>&gt;</span><br>	<br>	<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-group"</span>&gt;</span><br>	  <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"control-label"</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"contact-name"</span>&gt;</span>Name<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span><br>	  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"controls"</span>&gt;</span><br>		<span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"contact-name"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"contactName"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Your name"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control requiredField"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">data-error-empty</span>=<span class="hljs-value">"Please enter your name"</span>&gt;</span><br>	  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>	<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-comment">&lt;!-- End name input --&gt;</span><br>	<br>	<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-group"</span>&gt;</span><br>	  <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"control-label"</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"contact-mail"</span>&gt;</span>Email<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span><br>	  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">" controls"</span>&gt;</span><br>		<span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"contact-mail"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"email"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Your email"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control requiredField"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"email"</span> <span class="hljs-attribute">data-error-empty</span>=<span class="hljs-value">"Please enter your email"</span> <span class="hljs-attribute">data-error-invalid</span>=<span class="hljs-value">"Invalid email address"</span>&gt;</span><br>	  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>	<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-comment">&lt;!-- End email input --&gt;</span><br>	<br>	<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-group"</span>&gt;</span><br>	  <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"control-label"</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"contact-message"</span>&gt;</span>Message<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span><br>		<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"controls"</span>&gt;</span><br>			<span class="hljs-tag">&lt;<span class="hljs-title">textarea</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"contact-message"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"comments"</span>  <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Your message"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control requiredField"</span> <span class="hljs-attribute">rows</span>=<span class="hljs-value">"8"</span> <span class="hljs-attribute">data-error-empty</span>=<span class="hljs-value">"Please enter your message"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">textarea</span>&gt;</span><br>		<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>	<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-comment">&lt;!-- End textarea --&gt;</span><br>	<br>	<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"text-right"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"submit"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"submit"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn"</span> <span class="hljs-attribute">data-error-message</span>=<span class="hljs-value">"Error!"</span> <span class="hljs-attribute">data-sending-message</span>=<span class="hljs-value">"Sending..."</span> <span class="hljs-attribute">data-ok-message</span>=<span class="hljs-value">"Message Sent"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"fa fa-paper-plane"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>Send Message<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>	<span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"hidden"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"submitted"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"submitted"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"true"</span> /&gt;</span><br>	<br><span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span><span class="hljs-comment">&lt;!-- End contact-form --&gt;</span>	</code></pre>
+							<p><br></p>
+							
+							
+							<ol>
+								<li>
+									<p>For each form input change the <code>label</code> text and <code>placeholder</code> as needed.</p>
+								</li>
+								<li>
+									<p>Then change the value of the <code>data-</code> attributes, that will be used by the <strong>validation</strong> script, for each input and button as described below.</p>
+								</li>
+							</ol>
+							<br>
+							<table class="table table-striped table-bordered">
+								<thead>
+								  <tr>
+									<th></th>
+									<th>Data</th>
+									<th>Element</th>
+									<th>Description</th>
+								  </tr>
+								</thead>
+								<tbody>
+								  <tr>
+									<td>1</td>
+									<td nowrap="">data-error-empty</td>
+									<td>All inputs</td>
+									<td>Error message if input has left empty.</td>
+								  </tr>
+								  <tr>
+									<td>2</td>
+									<td nowrap="">data-error-invalid</td>
+									<td>email input</td>
+									<td>Error message if email is invalid.</td>
+								  </tr>
+								  <tr>
+									<td>3</td>
+									<td nowrap="">data-error-message</td>
+									<td>button</td>
+									<td>Button text if form contains errors.</td>
+								  </tr>
+								  <tr>
+									<td>4</td>
+									<td nowrap="">data-sending-message</td>
+									<td>button</td>
+									<td>Button text if form is validated and message is beeing sent.</td>
+								  </tr>
+								  <tr>
+									<td>5</td>
+									<td nowrap="">data-ok-message</td>
+									<td>button</td>
+									<td>Button text when the message has been sent.</td>
+								  </tr>
+								</tbody>
+							  </table>
+							<br>
+							<p class="lead">MAKE CONTACT FORM WORK</p>
+							<p>Open <strong>contact.php</strong> file with your favorite text editor.</p>
+							<p>Normally the only things you want to change are <strong>your email</strong> and <strong>your site's title</strong> for the autoresponder message. So, at the very top of the file change the value of those two variables.</p><br><pre><code class="hljs php"><span class="hljs-variable">$emailTo</span> = <span class="hljs-string">'mail@domain.net'</span>;<br><span class="hljs-variable">$siteTitle</span> = <span class="hljs-string">'Your site title'</span>;	</code></pre><br><p>That's it. Now the <strong>contact</strong> script will send the message user has entered to your email and an autoresponse to his email.</p>
+							<p class="text-info">Tip: If you don't want to send an autoresponse just scroll down to the bottom of the file and comment this line:</p>
+							<br><pre><code class="hljs php">mail(<span class="hljs-variable">$email</span>, <span class="hljs-variable">$respondSubject</span>, <span class="hljs-variable">$respondBody</span>, <span class="hljs-variable">$respondHeaders</span>);<span class="hljs-comment"></span><br></code></pre><hr>
+							<p class="lead">FURTHER CUSTOMIZATION</p>
+							<p class="text-danger">WARNING: Make sure you know what you are doing before proceeding to the following customizations!</p>
+							<p>Scroll to the bottom of the <strong>contact.php</strong> file and within the <code>if(!isset($hasError))</code> conditional statement. This is where the messages are being sent to you and the user. <br></p><br><pre><code class="hljs php"><span class="hljs-variable">$subject</span> = <span class="hljs-string">'New message to '</span>.<span class="hljs-variable">$siteTitle</span>.<span class="hljs-string">' from '</span>.<span class="hljs-variable">$name</span>;<br><span class="hljs-variable">$sendCopy</span> = trim(<span class="hljs-variable">$_POST</span>[<span class="hljs-string">'sendCopy'</span>]);<br><span class="hljs-variable">$body</span> = <span class="hljs-string">"Name: $name \n\nEmail: $email \n\nMessage: $comments"</span>;<br><span class="hljs-variable">$headers</span> = <span class="hljs-string">'From: '</span> .<span class="hljs-string">' &lt;'</span>.<span class="hljs-variable">$email</span>.<span class="hljs-string">'&gt;'</span> . <span class="hljs-string">"\r\n"</span> . <span class="hljs-string">'Reply-To: '</span> . <span class="hljs-variable">$email</span>;<br><br>mail(<span class="hljs-variable">$emailTo</span>, <span class="hljs-variable">$subject</span>, <span class="hljs-variable">$body</span>, <span class="hljs-variable">$headers</span>);<br><br><span class="hljs-variable">$respondSubject</span> = <span class="hljs-string">'This is a sample auto response from '</span>.<span class="hljs-variable">$siteTitle</span>;<br><span class="hljs-variable">$respondBody</span> = <span class="hljs-string">"Your message to $siteTitle has been delivered!"</span>;<br><span class="hljs-variable">$respondHeaders</span> = <span class="hljs-string">'From: '</span> .<span class="hljs-string">' &lt;'</span>.<span class="hljs-variable">$emailTo</span>.<span class="hljs-string">'&gt;'</span> . <span class="hljs-string">"\r\n"</span> . <span class="hljs-string">'Reply-To: '</span> . <span class="hljs-variable">$emailTo</span>;<br><br>mail(<span class="hljs-variable">$email</span>, <span class="hljs-variable">$respondSubject</span>, <span class="hljs-variable">$respondBody</span>, <span class="hljs-variable">$respondHeaders</span>);<br><br></code></pre><p>Change the structure and/or the text of the messages as you like to suit your needs. </p><hr></div>
+					</div>
+					
+					<div id="newsletter" class="panel panel-success">
+						<div class="panel-heading">
+							<h3 class="panel-title">Newsletter Forms<br></h3>
+						</div>
+						<div class="panel-body"><h3>AJAX Mailchimp integration</h3><p>To make newsletter forms work with your Mailchimp lists use the following markup <br></p><pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"mc-newsletter row"</span> <span class="hljs-attribute">data-list-url</span>=<span class="hljs-value">"https://q-themes.us13.list-manage.com/subscribe/post?u=73e57c09c84bd3028d571dac5&amp;amp;id=a7a1cfb176"</span> <span class="hljs-attribute">novalidate</span>&gt;</span><br>	<br>	<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-group col-sm-6 col-sm-offset-1 col-md-5 col-md-offset-2 col-lg-6"</span>&gt;</span><br>	  <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"control-label"</span>&gt;</span>Email<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span><br>	  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">" controls"</span>&gt;</span><br>		<span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"email"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Enter Your email"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span>&gt;</span><br>	  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>	  <br>		<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"mc-validation text-left"</span>&gt;</span><br>		<br>			<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"mc-text-if-empty"</span>&gt;</span>&amp;times; Please enter an email address<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><br>			<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"mc-text-if-invalid"</span>&gt;</span>&amp;times; Invalid email address<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><br>			<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"mc-text-if-sending"</span>&gt;</span>Please Wait ...<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><br>			<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"mc-text-if-ok"</span>&gt;</span>You have been succesfully subscribed!<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><br>			<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"mc-text-if-exist"</span>&gt;</span>This email address is already subscribed to the list<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><br>		<br>		<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>		<br>	<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-comment">&lt;!-- End email input --&gt;</span><br>	<br>	<span class="hljs-tag">&lt;<span class="hljs-title">div</span>  <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-4 col-md-3 col-lg-2"</span>&gt;</span><br>		<span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"submit"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"submit"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-block"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"fa fa-envelope"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>Subscribe<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><br>	<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>	<br>	<br><span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span><span class="hljs-comment">&lt;!-- End newsletter-form --&gt;</span><br><br></code></pre><p><br></p><h4>1. Provide your Mailchimp list url.</h4><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; How to find your Mailchimp list url:</p><ol><li>Create a list <br></li><li>Navigate to the <strong>Lists</strong> page.</li><li>Click the&nbsp;drop-down menu next to the list you want to work with, and choose 
+<strong>Signup forms</strong>. There you'll find your Signup form URL, BUT this is shortened and will not work.<br></li><li>&nbsp;Paste this URL in your address bar to visit it and you'll find the full List URL. Copy it from your address bar and paste it in the <code>data-list-url</code> attribute. </li></ol><p><br></p><h4>2.&nbsp; Change the validation texting</h4><p><br></p><table class="table table-striped table-bordered">
+								<thead>
+								  <tr>
+									<th></th>
+									<th>Data</th>
+									
+									<th>Description</th>
+								  </tr>
+								</thead>
+								<tbody>
+								  <tr>
+									<td>1</td>
+									<td nowrap="">mc-text-if-empty</td>
+									
+									<td>Text to be shown if email input is empty<br></td>
+								  </tr>
+								  <tr>
+									<td>2</td>
+									<td nowrap="">mc-text-if-invalid</td>
+									
+									<td>Text to be shown if email address is invalid<br></td>
+								  </tr>
+								  <tr>
+									<td>3</td>
+									<td nowrap="">mc-text-if-sending</td>
+									
+									<td>Text to be shown while waiting for Mailchimp response<br></td>
+								  </tr>
+								  <tr>
+									<td>4</td>
+									<td nowrap="">mc-text-if-ok</td>
+									
+									<td>Text to be shown if email address successfully subscribed <br></td>
+								  </tr>
+								  <tr>
+									<td>5</td>
+									<td nowrap="">mc-text-if-exist</td>
+									
+									<td>Text to be shown if email address is already subscribed to the list</td>
+								  </tr>
+								</tbody>
+							  </table><strong><br></strong><br><h3>Modal window newsletter</h3><p>The markup for the Modal window newsletter form is at the bottom of the body, right before the scripts block.</p><pre><code class="hljs javascript">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"modal fade autopopup"</span> data-delay=<span class="hljs-string">"15000"</span>&gt;<br></code></pre><strong><br></strong>Change the time it shows up with the <code>data-delay</code> attribute. The time is in milliseconds.<br></div>
+					</div>
+					
+					<div id="gmap" class="panel panel-success">
+						<div class="panel-heading">
+							<h3 class="panel-title">Google Map<br></h3>
+						</div>
+						<div class="panel-body"><h3>Google Map</h3><p>At the bottom of the index.html file, right before the closing<code>&lt;/body&gt;</code> tag, you can see the configuration of your Google Map point.</p><pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><br><br><span class="javascript">	<span class="hljs-keyword">var</span> mapPoint = {</span><br><span class="javascript">			<span class="hljs-string">'lat'</span>: <span class="hljs-number">40.720099</span>,</span><br><span class="javascript">			<span class="hljs-string">'lng'</span>: -<span class="hljs-number">74.005764</span>,</span><br><span class="javascript">			<span class="hljs-string">'zoom'</span> : <span class="hljs-number">15</span>,</span><br><span class="javascript">			<span class="hljs-string">'mapAddress'</span>:<span class="hljs-string">'250 W Broadway, New York, NY 10013'</span>,</span><br><span class="javascript">			<span class="hljs-string">'icon'</span>: <span class="hljs-string">'assets/images/marker.png'</span></span><br><span class="javascript">		};</span><br><span class="javascript">	</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span><br><br></code></pre>
+							<br>
+							<table class="table table-striped table-bordered">
+								<thead>
+								  <tr>
+									<th><br></th>
+									<th>Option</th>
+									<th>Description</th>
+								  </tr>
+								</thead>
+								<tbody>
+								  <tr>
+									<td>1</td>
+									<td nowrap="nowrap"><code>lat</code></td>
+									<td>Point Latitude</td>
+								  </tr>
+								  <tr>
+									<td>2</td>
+									<td nowrap="nowrap"><code>lang</code></td>
+									<td>Point Longitude</td>
+								  </tr>
+								  <tr>
+									<td>3</td>
+									<td nowrap="nowrap"><code>zoom</code></td>
+									<td>Map zoom factor</td>
+								  </tr>
+								  
+								  
+								  <tr>
+									<td>4<br></td>
+									<td nowrap="nowrap"><code>mapAddress</code></td>
+									<td>Your address. It will be used when the marker is clicked and redirects to Google Maps site.</td>
+								  </tr>
+								  <tr>
+									<td>5<br></td>
+									<td nowrap="nowrap"><code>icon</code></td>
+									<td>The marker icon.</td>
+								  </tr>
+								</tbody>
+							</table>
+							</div>
+					</div>
+					
+					<div id="colors" class="panel panel-success">
+						<div class="panel-heading">
+							<h3 class="panel-title">Theme Colors</h3>
+						</div>
+						<div class="panel-body">
+							<p>Agen template comes with 8 predefined color schemes.<br> To use the one you like just replace the <code>agen-color-1.css</code> file with the one of your choice.</p>
+							<br>
+							<table class="table table-striped table-bordered">
+								<thead>
+								  <tr>
+									<th></th>
+									<th>Color</th>
+									<th>CSS Filename</th>
+								  </tr>
+								</thead>
+								<tbody>
+								  <tr>
+									<td>1</td>
+									<td id="style-1"></td>
+									<td>agen-color-1.css</td>
+								  </tr>
+								  <tr>
+									<td>2</td>
+									<td id="style-2"></td>
+									<td>agen-color-2.css</td>
+								  </tr>
+								  <tr>
+									<td>3</td>
+									<td id="style-3"></td>
+									<td>agen-color-3.css</td>
+								  </tr>
+								  <tr>
+									<td>4</td>
+									<td id="style-4"></td>
+									<td>agen-color-4.css</td>
+								  </tr>
+								  <tr>
+									<td>5</td>
+									<td id="style-5"></td>
+									<td>agen-color-5.css</td>
+								  </tr>
+								  <tr>
+									<td>6</td>
+									<td id="style-6"></td>
+									<td>agen-color-6.css</td>
+								  </tr>
+								  <tr>
+									<td>7</td>
+									<td id="style-7"></td>
+									<td>agen-color-7.css</td>
+								  </tr>
+								  <tr>
+									<td>8</td>
+									<td id="style-8"></td>
+									<td>agen-color-8.css</td>
+								  </tr>
+								</tbody>
+							  </table>
+						</div>
+					</div>
+					
+					<div id="changelog" class="panel panel-success">
+						<div class="panel-heading">
+							<h3 class="panel-title">Change Log</h3>
+						</div>
+						<div class="panel-body">
+						
+							<h3><span class="text-info">Version 1.0 </span><span class="h5"> April 2 2016</span></h3>
+							<br>
+							<ul>
+								<li>Initial Release</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div id="credits" class="panel panel-success">
+						<div class="panel-heading">
+							<h3 class="panel-title">Credits</h3>
+						</div>
+						<div class="panel-body">
+							<h3>Framework</h3>
+							<br>
+							<ul>
+								<li><a href="http://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+							</ul>
+							<br>
+							<h3>JS Scripts</h3>
+							<br>
+							<ul>
+								<li><a href="https://jquery.com/" target="_blank">jQuery</a></li>
+								<li><a href="https://github.com/scdoshi/jquery-ajaxchimp" target="_blank">jquery.ajaxchimp.js</a></li>
+								<li><a href="https://github.com/mhuggins/jquery-countTo" target="_blank">jquery.countTo.js</a></li>
+								<li><a href="http://gsgd.co.uk/sandbox/jquery/easing/" target="_blank">jquery.easing.1.3.js</a></li>
+								<li><a href="http://fitvidsjs.com/" target="_blank">jquery.fitvids.js</a></li>
+								<li><a href="https://www.woothemes.com/flexslider/" target="_blank">jquery.flexslider.js</a></li>
+								<li><a href="http://masonry.desandro.com" target="_blank">jquery.masonry.js</a></li>
+								<li><a href="http://sorgalla.com/lity/" target="_blank">lity.min.js</a></li>
+								<li><a href="http://pixelcog.github.io/parallax.js/" target="_blank">parallax.js</a></li>
+								<li><a href="http://imulus.github.io/retinajs/" target="_blank">retina.js</a></li>
+								<li><a href="http://imakewebthings.com/waypoints/" target="_blank">waypoints.js</a></li>
+							</ul>
+							<br>
+							<h3>Fonts</h3>
+							<br>
+							<ul>
+								<li><a href="http://www.google.com/fonts" target="_blank">Google Fonts</a></li>
+								<li><a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">Font Awesome</a></li>
+							</ul>
+							<br>
+							<h3>Demo Images</h3>
+							<br>
+							<ul>
+								<li><a href="https://pixabay.com/" target="_blank">Pixabay</a></li>
+								<li><a href="http://www.epicpxls.com/freebies/mockups/ipad-air-2-mockup" target="_blank">iPad Air 2 mockup</a></li>
+								<li><a href="https://dribbble.com/shots/1290481-iPad-Air-PSD-Mockup-Perspective-View-Black-White" target="_blank">iPad Air PSD Mockup</a></li>
+								<li><a href="https://dribbble.com/shots/1230873-iPhone-5c-Template" target="_blank">iPhone 5c Template</a></li>
+								<li><a href="https://dribbble.com/shots/2626708-Modern-Business-Blue-Trifold" target="_blank">Dribbble shot</a></li>
+								<li><a href="https://dribbble.com/shots/2625609-Personal-site" target="_blank">Dribbble shot</a></li>
+								<li><a href="https://dribbble.com/shots/2626649-Weekend-Warrior" target="_blank">Dribbble shot</a></li>
+								<li><a href="https://dribbble.com/shots/2626011-Design-home-page" target="_blank">Dribbble shot</a></li>
+								<li><a href="https://dribbble.com/shots/1934662-Tap" target="_blank">Dribbble shot</a></li>
+								<li><a href="https://dribbble.com/shots/2625608-Noisy-Water-Winery" target="_blank">Dribbble shot</a></li>
+								<li><a href="https://dribbble.com/shots/2380779-Wedding-Photography-A5-Catalog-Brochure-24-Pages" target="_blank">Dribbble shot</a></li>
+								<li><a href="https://dribbble.com/shots/2623072-Sign-In" target="_blank">Dribbble shot</a></li>
+							</ul>
+						</div>
+					</div>
+					
+					<p class="lead text-center">THE END!</p>
+					
+					<p class="text-center">Once again thank you for purchasing this template.<br>If you have any questions that are beyond the scope of this documentation feel free to contact us via email:<br><a href="mailto:support@q-themes.net">support@q-themes.net</a></p>.
+					<br>
+					<p class="lead text-center"><a href="#top">Go to top.</a></p>
+					<br>
+					
+				</div>
+			
+			</div>
+		
+		</div>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/libs/jquery-1.8.2.min.js">\x3C/script>')</script>
+		
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/highlight.pack.js"></script>
+		<script>
+			var $sideBar = $('#sidebar .panel');
+			$sideBar.affix({
+				offset: {
+				  top: function () {
+					var offsetTop      = $sideBar.offset().top;
+
+					return (this.top = offsetTop - 50)
+				  }
+				}
+			});
+			
+			$( 'pre code.tohljs' ).each(function(){
+				$(this).text( $(this).html() );
+			})
+			
+			$('pre code.tohljs').each(function(i, block) {
+				$(this).removeClass('tohljs');
+				hljs.highlightBlock(block);
+			});
+		</script>	
+	</body>
+</html>

@@ -6,13 +6,13 @@ body,html{
 }
 
 body{
-    background:#fff;
+    background:#a5a5a5;
 }
 
 body{
     font-family: Roboto, Arial, sans-serif;
     font-size:16px;
-    color:#67696c;
+    color: #5c5c5c;
     font-weight:300;
     letter-spacing: 0.05em;
     overflow-x:hidden;
@@ -97,6 +97,7 @@ a:focus,
 
 .padding-top {
     padding:100px 0 0;
+    background-color: #e0e0e0
 }
 
 .padding-bottom {
@@ -119,6 +120,7 @@ a:focus,
     font-size:42px;
     line-height:58px;
     font-weight:700;
+    background-color: #e0e0e0;
     color:#313336;
     text-transform: uppercase;
     letter-spacing:.05em;
@@ -258,11 +260,11 @@ a:focus,
 ------------------*/
 
 .white-bg{
-    background:#fff;
+    background:#909090
 }
 
 .gray-bg{
-    background:#f1f2f5;
+    background:#e0e0e0;
 }
 
 .color-bg{
@@ -270,7 +272,7 @@ a:focus,
 }
 
 .dark-bg{
-    background:#4E5961;
+    background:#a5a5a5;
 }
 
 .light-typo {
@@ -480,6 +482,10 @@ a:focus,
     color:#fff;
     -webkit-transition:color 0.2s ease-out;
     transition:color 0.2s ease-out; 
+}
+
+#scrollto:hover {
+    color: #e0ceff
 }
 
 #main-nav .nav .active > a,

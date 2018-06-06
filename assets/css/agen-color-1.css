@@ -24,6 +24,10 @@ a:focus,
 	color:#673AB7;
 }
 
+#scrollto:hover {
+    color: #e0ceff
+}
+
 #page-loader span,
 .color-bg,
 .overlay-color:before,
@@ -43,6 +47,7 @@ a:focus,
 .btn.white:hover,
 .btn.white:active{
     background:#673AB7;
+    box-shadow: 1px 2px 3px #a5a5a5;
 }
 
 .features .icon {
